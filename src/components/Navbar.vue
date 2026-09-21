@@ -17,6 +17,8 @@
 <style scoped>
   /* CSS khusus buat component ini saja, tidak bocor ke component lain */
   .atas {
+    font-weight: bold;
+     font-family: 'Segoe UI', sans-serif;
     color: rgb(231, 240, 250);
     background-color: rgba(46, 134, 83, 0.993);
     border-radius: 10px;

@@ -4,8 +4,20 @@ const tahun = new Date().getFullYear()
  
 <template>
   <hr />
+  <div class="container">
   <footer>
-    <small>&copy; {{ tahun }} RyanBimo — Onlineshop 
-Milik Bimo</small>
+    <medium>&copy; {{ tahun }} RyanBimo — Onlineshop 
+Milik Bimo</medium>
   </footer>
-</template>a
+  </div>
+</template>
+
+<style scoped>
+.container {
+  color: gray;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+}
+</style>

@@ -1,5 +1,15 @@
 <script setup>
-import TeamCard from '../components/TeamCard.vue';
+import AboutCard from '../components/AboutCard.vue'
+import TeamCard from '../components/TeamCard.vue'
+
+const daftarteam = [
+  { id: 1, h1: 'R',
+   h2: 'Ryan', p: 'Ketua tim' },
+   { id: 2, h1: 'B',
+   h2: 'Bimo', p: 'Design UI/UX' },
+   { id: 3, h1: 'A',
+   h2: 'Adietyo', p: 'Pengembang' },
+]
 </script>
 
 <template> 
@@ -8,8 +18,17 @@ import TeamCard from '../components/TeamCard.vue';
      <h1>Tentang Kami</h1>
 </div>
 
-<TeamCard/>
-
+<AboutCard/>
+<div class="container">
+  <h1>Tim Kami</h1>
+  <TeamCard
+       v-for="team in daftarteam"
+        :key="team.id"
+        :h1="team.h1"
+        :h2="team.h2"
+        :p="team.p"
+      />
+      </div>
     <!-- <video controls width="480" muted loop> 
       <source src="/video/promo-toko.mp4" type="video/mp4" /> 
       Browser kamu tidak mendukung pemutaran video. 
@@ -23,6 +42,25 @@ import TeamCard from '../components/TeamCard.vue';
   border-radius: 10px; 
   display: block; 
 }  */
+
+.container {
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  gap: 20px;
+  place-content: center;
+  flex-wrap: wrap;
+}
+
+.container h1{
+    background: linear-gradient(to bottom, #4e7eb4, #3b588d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+
+}
 
   .kotak {
   color: white;
