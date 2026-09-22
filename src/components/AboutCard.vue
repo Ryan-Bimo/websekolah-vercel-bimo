@@ -16,6 +16,7 @@ Proses pengembangan website ini menjadi pengalaman berharga dalam mempelajari ba
 
 <style scoped>
 .kolom{
+     font-family: 'Segoe UI', sans-serif;
 display: flex; 
 align-items: flex-start;
 margin: 50px;

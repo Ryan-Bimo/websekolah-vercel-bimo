@@ -4,13 +4,16 @@
     <h2>Ryan Bimo - Onlineshop</h2>
     <RouterLink to="/">Landing</RouterLink> |
     <RouterLink to="/product">Product</RouterLink> |
-    <RouterLink to="/about">About</RouterLink>
+    <RouterLink to="/about">About</RouterLink> |
+    <RouterLink to="/contact">Contact</RouterLink>
   </nav>
   <hr />
   </div>
 </template>
  
 <script setup>
+import { RouterLink } from 'vue-router';
+
   // JavaScript-nya di sini
 </script>
  
