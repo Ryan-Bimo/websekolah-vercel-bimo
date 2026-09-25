@@ -15,6 +15,11 @@ const daftarPropotition = [
 <template>
   <main>
     <LandingCard/>
+    <center>
+      <video controls width="480" muted loop> 
+      <source src="/video/promo-toko.mp4" type="video/mp4"/>
+    </video>
+  </center>
     <div class="container">
       <PropotitionCard
        v-for="propotition in daftarPropotition"

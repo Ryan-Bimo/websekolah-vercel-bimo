@@ -56,6 +56,10 @@ function tambahKeKeranjang(nama) {
   suara.play() 
   alert(`${nama} ditambahkan ke keranjang!`) 
 } 
+
+function beliBeli(nama) { 
+  alert(`${nama} berhasil di beli, siapkan uang untuk pembayaran yaa!`) 
+} 
 </script> 
   
 <template> 
@@ -63,7 +67,7 @@ function tambahKeKeranjang(nama) {
     <img :src="gambar" :alt="nama" @click="bukaPreview(gambar)" /> 
     <h3>{{ nama }}</h3> 
     <p>Rp {{ harga.toLocaleString('id-ID') }}</p> 
-     <button class="button">Beli Sekarang</button>
+     <button @click="beliBeli(nama)" class="button">Beli Sekarang</button>
       <button @click="tambahKeKeranjang(nama)" class="krjg">Tambah ke Keranjang</button> 
   </div> 
   

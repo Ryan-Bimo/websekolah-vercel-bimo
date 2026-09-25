@@ -16,11 +16,11 @@ defineProps(['gambar', 'h1', 'h2'])
   font-family: 'Segoe UI', sans-serif;
   color: black;
   width: 280px;
-  background-color: white;
-  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(3, 3, 3);
   border-radius: 10px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.4);
-  overflow: hidden;
+  overflow: hiddeN;
   margin: 15px;
   padding: 24px;
   text-align: center;
